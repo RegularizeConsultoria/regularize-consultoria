@@ -127,3 +127,20 @@ ul {
   .zoom-link:hover {
     transform: scale(1.1);
   }
+
+  @keyframes text-selection {
+    0% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #bad2ff83; /* Cor de destaque durante a animação */
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+  
+  #animated-text {
+    animation: text-selection 3s infinite;
+    border-radius: 8px;
+  }

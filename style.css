@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    margin-bottom: 18px;
+    padding: 0;
+    background: linear-gradient(135deg, #447AD1, #53E1A3);
+    background-size: 4000px;
+    animation: gradientAnimation 6s infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    position: relative;
+    max-width: 920px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin-top: 17px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInAnimation 1s ease;
+}
+
+.logo-image {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fadeInAnimation 2s ease;
+    height: 125px; /* Ajuste a altura da imagem conforme necessário */
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDownAnimation {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+p {
+    color: #555;
+    line-height: 1.5;
+    animation: fadeInAnimation 1s ease;
+}
+
+ul {
+    animation: fadeInAnimation 1s ease;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    animation: slideInUpAnimation 1s ease;
+}
+
+@keyframes slideInUpAnimation {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.contact-info-icon {
+    height: 40px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.contact-info p {
+    margin: 0;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-info-icon-zap {
+    height: 40px;
+    width: 45px;
+    margin-right: 10px;
+}
+
+.zoom-link {
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+
+  .zoom-link:hover {
+    transform: scale(1.1);
+  }

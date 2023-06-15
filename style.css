@@ -5,9 +5,7 @@ body {
     margin: 0;
     margin-bottom: 18px;
     padding: 0;
-    background: linear-gradient(135deg, #447AD1, #53E1A3);
-    background-size: 4000px;
-    animation: gradientAnimation 6s infinite;
+    background-color: aquamarine;
 }
 
 @keyframes gradientAnimation {
@@ -30,7 +28,7 @@ body {
     padding: 20px;
     margin-top: 17px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 24px 24px 2px rgba(0, 0, 0, 0.1);
     animation: fadeInAnimation 1s ease;
 }
 
@@ -69,6 +67,8 @@ p {
     color: #555;
     line-height: 1.5;
     animation: fadeInAnimation 1s ease;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.004);
+    -webkit-text-stroke: 0.45px rgba(255, 255, 255, 0.1);
 }
 
 ul {
@@ -133,7 +133,7 @@ ul {
       background-color: transparent;
     }
     50% {
-      background-color: #bad2ff83; /* Cor de destaque durante a animação */
+      background-color: rgba(127, 255, 212, 0.123); /* Cor de destaque durante a animação */
     }
     100% {
       background-color: transparent;
